@@ -1,0 +1,8 @@
+{
+  "name": "peachy-bot-example",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\" && npm --prefix template ci && npm --prefix template test"
+  }
+}

@@ -1,0 +1,17 @@
+# systemd unit for the bot. Copy to /etc/systemd/system/, adjust the paths
+# and user, then: systemctl enable --now example-bot
+[Unit]
+Description=Example Bot (Peachy chat bot)
+After=network-online.target peachy-daemon.service
+Wants=network-online.target
+
+[Service]
+User=bot
+WorkingDirectory=/opt/example-bot
+EnvironmentFile=/opt/example-bot/.env
+ExecStart=/usr/bin/node src/main.ts
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

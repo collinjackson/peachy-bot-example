@@ -1,0 +1,15 @@
+# systemd unit for peachy daemon, which the bot talks to. Link the device
+# first (peachy -d /var/lib/example-bot/peachy login ...) as the same user.
+[Unit]
+Description=peachy daemon for Example Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=bot
+ExecStart=/usr/local/bin/peachy -d /var/lib/example-bot/peachy daemon -mode json-rpc
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
