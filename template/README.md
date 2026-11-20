@@ -131,6 +131,7 @@ container shares), and set `PEACHY_DAEMON_URL` and `PEACHY_TOKEN` to match.
 
 ## License
 
-This code is under MIT No Attribution (`LICENSE`): use it any way you like,
-no credit needed. Once it's your bot, you may replace `LICENSE` with any
-license you choose, and update `"license"` in `package.json` to match.
+This bot started from
+[peachy-bot-example](https://github.com/collinjackson/peachy-bot-example),
+which is under MIT No Attribution: it's yours, and no notice or credit is
+needed. Add a license of your own if and when you like.

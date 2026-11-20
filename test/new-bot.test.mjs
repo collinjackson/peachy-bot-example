@@ -27,7 +27,7 @@ test("copies template/ with the name filled in", () => {
   assert.match(readFileSync(join(dir, "src/config.ts"), "utf8"), /"Movie Night Bot"/);
   assert.match(readFileSync(join(dir, "README.md"), "utf8"), /^# Movie Night Bot\n/);
   assert.ok(existsSync(join(dir, "deploy/movie-night-bot.service")));
-  assert.match(readFileSync(join(dir, "LICENSE"), "utf8"), /^MIT No Attribution/);
+  assert.ok(!existsSync(join(dir, "LICENSE"))); // the owner's to add
   assert.ok(existsSync(join(dir, ".git")));
   assert.ok(!existsSync(join(dir, "node_modules")));
 
@@ -63,5 +63,5 @@ test("--here turns a copy of this repo into the bot", () => {
   assert.ok(!files.includes("new-bot.sh"));
   assert.ok(files.includes("src"));
   assert.equal(JSON.parse(readFileSync(join(copy, "package.json"), "utf8")).name, "trivia");
-  assert.match(readFileSync(join(copy, "LICENSE"), "utf8"), /^MIT No Attribution/);
+  assert.ok(!files.includes("LICENSE")); // the template's own repo license doesn't come along
 });

@@ -80,6 +80,5 @@ Made $name in $dest.
   npm test
   cp .env.example .env    # then edit it, and see README.md to run it
 
-It's your code now. LICENSE is MIT No Attribution, which asks nothing of
-you; replace it with any license you like (and "license" in package.json).
+It's your code now, with no license attached: add one if and when you like.
 MSG

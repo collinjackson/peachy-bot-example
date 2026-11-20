@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "A chat bot for Peachy",
   "private": true,
-  "license": "MIT-0",
   "type": "module",
   "engines": {
     "node": ">=22.18"

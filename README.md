@@ -43,13 +43,11 @@ git add -A && git commit -m "Start My Bot"
 `--here` moves `template/` to the top of your repository, fills in the name,
 and removes the generator, its tests and this README.
 
-## Licenses
+## License
 
-- **`template/`** is under [MIT No Attribution](template/LICENSE). A bot made
-  from it is yours: no notice or credit is needed, and you may replace its
-  `LICENSE` with any license you choose.
-- **Everything else** here (this README, `new-bot.sh`, `test/`) is under the
-  [MIT License](LICENSE).
+Everything here is under [MIT No Attribution](LICENSE). A bot made from it is
+yours: no notice or credit is needed. `template/` has no license file, so a
+new bot starts with none; add one if and when you like.
 
 ## Develop
 
