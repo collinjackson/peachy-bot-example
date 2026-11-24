@@ -1,5 +1,14 @@
 # peachy-bot-example
 
+> **Archived.** Peachy now has bots of its own: a bot account with no phone
+> number, the [`@peachysocial/bot`](https://www.npmjs.com/package/@peachysocial/bot)
+> SDK, and an official starter,
+> [peachysocial/peachy-bot-template](https://github.com/peachysocial/peachy-bot-template).
+> Start there. The developer docs are at https://pchy.app/developers.
+>
+> This repository is kept for reference. It shows a bot that runs on an
+> ordinary Peachy account through `peachy daemon`, which still works.
+
 A starting point for writing a chat bot for [Peachy](https://pchy.app).
 
 Bots run on Peachy through `peachy daemon`, part of
